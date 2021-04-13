@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="436.0" prefWidth="290.0" style="-fx-background-color: grey;">
+         <children>
+            <Button id="getData" fx:id="getData" layoutX="77.0" layoutY="110.0" mnemonicParsing="false" text="Узнать погоду">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Text layoutX="82.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погодник" wrappingWidth="132.13671875" AnchorPane.bottomAnchor="391.7509765625" AnchorPane.leftAnchor="82.0" AnchorPane.rightAnchor="81.86328125" AnchorPane.topAnchor="22.86572265625">
+               <font>
+                  <Font name="Verdana Italic" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#e42323" layoutX="25.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text id="temp_info" fx:id="temp_info" layoutX="55.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="температура:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text id="temp_feel" fx:id="temp_feels" layoutX="60.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ощущается:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text id="temp_max" fx:id="temp_max" layoutX="64.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="максимум:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text id="temp_min" fx:id="temp_min" layoutX="67.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="минимум:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text id="pressure" fx:id="pressure" layoutX="67.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="давление:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="city" layoutX="78.0" layoutY="53.0" prefHeight="31.0" prefWidth="140.0" text="Введите город">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="image" fitHeight="50.0" fitWidth="60.0" layoutX="197.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: red;" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
